@@ -59,7 +59,7 @@ Para copiar o projeto, utilize os comandos:
   ❯ cd GzDevs
 ```
 
-### Banco de Dados
+### Banco de Dados Postgres 
 
 [Docker](https://www.docker.com/)
 
@@ -69,8 +69,6 @@ docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 docker start postgres
 ```
 
-### Migrations
-
 Para instalar as dependências e iniciar o projeto, utilizar o composer:
 
 **Utilizando composer**
@@ -79,8 +77,18 @@ Para instalar as dependências e iniciar o projeto, utilizar o composer:
   # Instalar as dependências
   ❯ composer install
 
-  # Rodar migrations
+  # Configurar a conexão com banco Postgres. Renomeie o arquivo .env.example para .env 
+
+  DB_CONNECTION=pgsql
+  DB_HOST=127.0.0.1
+  DB_PORT=5432
+  DB_DATABASE=gzdevs
+  DB_USERNAME=postgres
+  DB_PASSWORD=password
+
+  # Rodar as migrations
    ❯ php artisan migrate
+
   # Iniciar o projeto
   ❯ php artisan serve
 ```
