@@ -1,61 +1,109 @@
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
+
+<h1 align="center">
+  🚀️ API do GzDevs
+</h1>
+
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/SandroAlmeidaDev/GzDevs">
+
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/SandroAlmeidaDev/GzDevs?logo=typescript">
+
+  <img alt="GitHub repo size in bytes" src="https://img.shields.io/github/repo-size/SandroAlmeidaDev/GzDevs?color=green">
+
+  <br>
 </p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Indice
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- :rocket: [Sobre o Projeto](#rocket-sobre-o-projeto)
+- 👨‍💻️ [Tecnogias utilizadas](#%EF%B8%8F-tecnogias-utilizadas)
+- 📦️ [Como utilizar o projeto](#%EF%B8%8F-como-utilizar-o-projeto)
+- 🤔️ [Como contribuir](#%EF%B8%8F-como-contribuir)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## :rocket: Sobre o Projeto
+Esse projeto é uma API no padrão RESTful para cadastro de desenvolvedores e seus hobbies.
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 👨‍💻️ Tecnogias utilizadas
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-## Laravel Sponsors
+- [PHP](https://www.php.net/)
+- [Laravel](https://laravel.com/)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Padronização de código
 
-### Premium Partners
+  - :mouse: [Editor Config](https://editorconfig.org/)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+### IDE
 
-## Contributing
+  - [Visual Studio Code](https://code.visualstudio.com/)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 📦️ Como utilizar o projeto
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Para copiar o projeto, utilize os comandos:
 
-## Security Vulnerabilities
+```bash
+  # Clonar o repositório
+  ❯ git clone https://github.com/SandroAlmeidaDev/GzDevs.git
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+  # Entrar no diretório
+  ❯ cd GzDevs
+```
 
-## License
+### Banco de Dados
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+[Docker](https://www.docker.com/)
+
+Depois de instalado o Docker, instale uma instancia do postgres:
+```bash
+docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+docker start postgres
+```
+
+### Migrations
+
+Para instalar as dependências e iniciar o projeto, utilizar o composer:
+
+**Utilizando composer**
+
+```bash
+  # Instalar as dependências
+  ❯ composer install
+
+  # Rodar migrations
+   ❯ php artisan migrate
+  # Iniciar o projeto
+  ❯ php artisan serve
+```
+
+## 🤔️ Como contribuir
+
+1. Faça o `fork` deste repositório
+2. Crie uma branch com sua feature:
+   - `$ git checkout -b minha_feature`
+3. Confirme sua branch:
+   - `$ git commit -m "feature: Meu novo recurso"`
+4. Envie sua branch:
+   - `$ git push origin minha_feature`
+
+---
+
+<h4 align="center">
+  Feito com carinho <a href="mailto:sandro.almeida.silva17@gmail.com">Entre em contato!</a>
+</h4>
+<p align="center">
+  <a href="https://www.linkedin.com/in/sandro-almeida-09664513a/">
+    <img alt="Sandro Almeida da Silva" src="https://img.shields.io/badge/sandro-almeida-09664513a?style=flat&logoColor=white&logo=linkedin">
+  <a href="https://twitter.com/jerpbtu">
+    <img alt="Sandro Almeida da Silva" src="https://img.shields.io/twitter/follow/sanndro?style=flat&logoColor=white&logo=Twitter">
+  </a>
+</p>

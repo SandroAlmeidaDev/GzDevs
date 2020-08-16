@@ -18,7 +18,7 @@ class DeveloperController extends Controller
 
     public function index()
     {
-      return response()->json($this->developer->paginate(10));
+        return response()->json($this->developer->paginate(10));
     }
 
     public function store(Request $request)
