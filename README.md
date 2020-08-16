@@ -93,6 +93,15 @@ Para instalar as dependências e iniciar o projeto, utilizar o composer:
   ❯ php artisan serve
 ```
 
+## Utilize o Insomnia para testar o CRUD
+
+[Insomnia](https://insomnia.rest/)
+
+# Feito download do Insomnia, importe o arquivo Insomnia_2020-08-16.json
+
+![gzdevs](https://user-images.githubusercontent.com/58606794/90346835-a752cf80-e002-11ea-9a0c-05cad9168c48.gif)
+
+
 ## 🤔️ Como contribuir
 
 1. Faça o `fork` deste repositório
