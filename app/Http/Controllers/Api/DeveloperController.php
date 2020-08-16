@@ -73,9 +73,9 @@ class DeveloperController extends Controller
     {
       try {
 
-        $id->delete();
+        Developer::find($id)->delete();
 
-        return response()->json(['data' => ['msg' => 'Sucesso!']], 200);
+        return response()->json(['data' => ['msg' => 'Desenvolvedor deletado com sucesso!']], 200);
 
       }catch (\Exception $e) {
         if(config('app.debug')) {
